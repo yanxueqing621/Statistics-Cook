@@ -9,16 +9,41 @@ use Types::Standard qw/Str Num Int ArrayRef/;
 # VERSION
 # ABSTRACT: Statistics::Cook
 
+=head1 NAME
+
+Statistics::Cook - calculate cook distance of Least squares line fit
+
 =head1 SYNOPSIS
 
   use Statistics::Cook;
-  ...
+  my @x = qw/1 2 3 4 5 6/;
+  my @y = qw/1 2.1 3.2 4 7 6/;
+  my $sc = Statistics::Cook->new(x => \@x, y => \@y);
+  ($intercept, $slope) = $sc->coefficients;
+  my @predictedYs = $sc->fitted;
+  my @residuals = $sc->residuals;
+  my @cooks = $sc->cooks_distance;
+
 
 =head1 DESCRIPTION
 
-Blablabla
+The Statistics::Cook module is used to calculate cook distance of Least squares line fit does weighted
+or unweighted to two-dimensional data (y = a + b * x). (This is also called linear regression.)
+In addition to the slope and y-intercept, the module, the predicted y values and the
+residuals of the y values. (See the METHODS section for a description of these statistics.)
+
+The module accepts input data in separate x and y arrays. The optional weights are input in a separate array
+The module is state-oriented and caches its results. you can call the other methods in any order
+or call a method several times without invoking redundant calculations.
+
+=head1 LIMITATIONS
+
+The purpose of I write this module is that I could not find a module to calculate cook distance in CPAN,
+Therefore I just realized a minimized function of least squares and cook distance in this module
 
 =cut
+
+
 
 has x => (
   is => 'rw',
