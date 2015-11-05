@@ -275,14 +275,14 @@ $self->N([1,2,3,4], 80), you will get N80
 =cut
 
 sub N {
-  my ($self, $num) = @_;
-  my $n = shift || 50;
+  my ($self, $num, $N) = @_;
+  $N ||= 50;
   my @nums = sort { $a <=> $b } @$num;
   my $sum = sum(@nums);
   my $tmp = 0;
   for my $i (0..$#nums) {
     $tmp += $nums[$i];
-    return ($nums[$i], $i+1) if ($tmp > $sum * $n / 100);
+    return ($nums[$i], $i+1) if ($tmp > $sum * $N / 100);
   }
 }
 
