@@ -1,8 +1,8 @@
 Revision history for Statistics-Cook
 
-0.0.3 2015-11-05T07:32:00Z
+0.0.3 2015-11-05T08:19:53
  [Yan Xueqing]
- - Auto commited by dzil with version 0.0.3 at 05-Nov-2015
+ - Removed redunctant Name field in podtext
 
 0.0.2 2015-11-05T07:34:54Z
  - No changes found

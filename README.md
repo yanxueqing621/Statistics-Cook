@@ -1,10 +1,10 @@
 # NAME
 
-Statistics::Cook - Statistics::Cook
+Statistics::Cook - Statistics::Cook - calculate cook distance of Least squares line fit
 
 # VERSION
 
-version 0.0.2
+version 0.0.3
 
 # SYNOPSIS
 
@@ -27,10 +27,6 @@ residuals of the y values. (See the METHODS section for a description of these s
 The module accepts input data in separate x and y arrays. The optional weights are input in a separate array
 The module is state-oriented and caches its results. you can call the other methods in any order
 or call a method several times without invoking redundant calculations.
-
-# NAME
-
-Statistics::Cook - calculate cook distance of Least squares line fit
 
 # LIMITATIONS
 
