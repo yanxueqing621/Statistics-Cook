@@ -126,6 +126,8 @@ the other methods in any order or call a method several times without invoking r
 
 The regression fails if the x values are all the same. In this case, the module issues an error message
 
+=cut
+
 
 sub _trigger_x {
   shift->regress_done(0);
