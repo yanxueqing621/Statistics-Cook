@@ -1,2 +1,10 @@
 Revision history for Statistics-Cook
 
+0.0.1 2015-11-05T07:29:47
+ [Yan Xueqing]
+ - Fixed pod text syntax error
+ - Complete pod text
+ - Add pod text file, but have't finished
+ - Add test file
+ - Finished all function in this module
+ - Initialize gitrepo with `dzil new`
