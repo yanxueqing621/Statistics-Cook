@@ -1,7 +1,15 @@
 Revision history for Statistics-Cook
 
-0.0.1 2015-11-05T07:29:47
+0.0.3 2015-11-05T07:32:00Z
  [Yan Xueqing]
+ - Auto commited by dzil with version 0.0.3 at 05-Nov-2015
+
+0.0.2 2015-11-05T07:34:54Z
+ - No changes found
+
+0.0.1 2015-11-05T07:29:49Z
+ [Yan Xueqing]
+ - Auto commited by dzil with version 0.0.1 at 05-Nov-2015
  - Fixed pod text syntax error
  - Complete pod text
  - Add pod text file, but have't finished
