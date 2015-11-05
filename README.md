@@ -4,7 +4,7 @@ Statistics::Cook - Statistics::Cook - calculate cook distance of Least squares l
 
 # VERSION
 
-version 0.0.3
+version 0.0.4
 
 # SYNOPSIS
 
