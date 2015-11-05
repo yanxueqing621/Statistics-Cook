@@ -7,11 +7,7 @@ use Moo;
 use Types::Standard qw/Str Num Int ArrayRef/;
 
 # VERSION
-# ABSTRACT: Statistics::Cook
-
-=head1 NAME
-
-Statistics::Cook - calculate cook distance of Least squares line fit
+# ABSTRACT: Statistics::Cook - calculate cook distance of Least squares line fit
 
 =head1 SYNOPSIS
 
