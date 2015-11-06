@@ -4,7 +4,7 @@ Statistics::Cook - Statistics::Cook - calculate cook distance of Least squares l
 
 # VERSION
 
-version 0.0.4
+version 0.0.5
 
 # SYNOPSIS
 
@@ -100,7 +100,7 @@ $self->N(\[1,2,3,4\], 80), you will get N80
 
 # AUTHOR
 
-Yan Xueqing &lt;yanxueqing621@163.com>
+Yan Xueqing <yanxueqing621@163.com>
 
 # COPYRIGHT AND LICENSE
 

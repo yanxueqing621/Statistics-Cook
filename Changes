@@ -1,6 +1,10 @@
 Revision history for Statistics-Cook
 
-0.0.4 2015-11-05T08:50:54
+0.0.5 2015-11-06T01:54:51
+ [Yan Xueqing]
+ - Modified N function sort array in descending
+
+0.0.4 2015-11-05T08:50:54Z
  [Yan Xueqing]
  - Fixed bug that N function error
  - Modified Podtext
@@ -21,3 +25,4 @@ Revision history for Statistics-Cook
  - Add test file
  - Finished all function in this module
  - Initialize gitrepo with `dzil new`
+
