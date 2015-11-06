@@ -277,7 +277,7 @@ $self->N([1,2,3,4], 80), you will get N80
 sub N {
   my ($self, $num, $N) = @_;
   $N ||= 50;
-  my @nums = sort { $a <=> $b } @$num;
+  my @nums = sort { $b <=> $a } @$num;
   my $sum = sum(@nums);
   my $tmp = 0;
   for my $i (0..$#nums) {
