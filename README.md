@@ -4,7 +4,7 @@ Statistics::Cook - Statistics::Cook - calculate cook distance of Least squares l
 
 # VERSION
 
-version 0.0.5
+version 0.0.6
 
 # SYNOPSIS
 
@@ -97,6 +97,18 @@ Calculate cook distance of linear model
 default is get N50 of a ArrayRef
 $self->N(\[1,2,3,4\], 90), you will get N90
 $self->N(\[1,2,3,4\], 80), you will get N80
+
+## mean
+
+mean value of an array
+
+## var
+
+The variance of a set of samples
+
+## sd
+
+The standard deviation of a set of samples
 
 # AUTHOR
 

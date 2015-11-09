@@ -1,6 +1,11 @@
 Revision history for Statistics-Cook
 
-0.0.5 2015-11-06T01:54:51
+0.0.6 2015-11-09T08:54:36
+ [Yan Xueqing]
+ - Add mean, var and sd method to get mean value, sample variance and
+   standard deviation
+
+0.0.5 2015-11-06T01:54:51Z
  [Yan Xueqing]
  - Modified N function sort array in descending
 
