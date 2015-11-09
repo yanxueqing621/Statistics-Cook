@@ -286,4 +286,46 @@ sub N {
   }
 }
 
+=head2 mean
+
+mean value of an array
+
+=cut
+
+sub mean {
+  my $self = shift;
+  my @arr = ref $_[0] eq 'ARRAY' ? @{$_[0]} : @_;
+  my $sum = 0;
+  $sum += $_ for @arr;
+  return $sum / @arr;
+}
+
+=head2 var
+
+The variance of a set of samples
+
+=cut
+
+sub var {
+  my $self = shift;
+  my @arr = ref $_[0] eq 'ARRAY' ? @{$_[0]} : @_;
+  my $m = $self->mean(@arr);
+  my $sum = 0;
+  $sum += ($_ - $m) ** 2 for (@arr);
+  return $sum / $#arr;
+}
+
+=head2 sd
+
+The standard deviation of a set of samples
+
+=cut
+
+sub sd {
+  my $self = shift;
+  my @arr = ref $_[0] eq 'ARRAY' ? @{$_[0]} : @_;
+  my $var = $self->var(@arr);
+  return sqrt($var);
+}
+
 1;
